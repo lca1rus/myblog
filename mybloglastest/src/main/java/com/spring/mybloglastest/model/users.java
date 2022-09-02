@@ -1,6 +1,20 @@
 package com.spring.mybloglastest.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
+import java.util.Collection;
+
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
 public class users {
 
     private Integer id;
@@ -11,31 +25,4 @@ public class users {
 
     private String userpassword;
 
-
-    public Integer getId() {
-        return id;
-    }
-
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username == null ? null : username.trim();
-    }
-
-
-    public String getUserpassword() {
-        return userpassword;
-    }
-
-    public void setUserpassword(String userpassword) {
-        this.userpassword = userpassword == null ? null : userpassword.trim();
-    }
 }

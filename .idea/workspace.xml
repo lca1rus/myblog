@@ -4,22 +4,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a927fea2-1e00-4f9d-a233-03be59c8623d" name="变更" comment="" />
+    <list default="true" id="a927fea2-1e00-4f9d-a233-03be59c8623d" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/Service/Impliment/UserImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/Service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/config/MyPasswordEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/config/authentication/MyAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/controller/UserLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/dao/usersmapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/model/loginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/model/vo/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/uitl/MD5Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybloglastest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/controller/log.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/mapper/usersmapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/mapper/usersmapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybloglastest/src/main/resources/mapper/usersmapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/model/users.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/model/users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/sever/implim/impl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/sever/mapperimlentment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybloglastest/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/log.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2EAGXlQT3c6aHy9iJuUzJCbXCBa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NBlog-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -29,7 +77,12 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="npm.serve">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JAVA\mybloggg\mybloglastest\src\main\resources\mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MybloglastestApplication">
     <configuration name="MybloglastestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mybloglastest" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.mybloglastest.MybloglastestApplication" />
@@ -64,10 +117,24 @@
       <updated>1662031017084</updated>
       <workItem from="1662031018383" duration="76000" />
       <workItem from="1662031262101" duration="1191000" />
+      <workItem from="1662040403887" duration="1757000" />
+      <workItem from="1662084905514" duration="11506000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
