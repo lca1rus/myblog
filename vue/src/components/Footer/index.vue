@@ -1,7 +1,8 @@
 <template>
   <div>
          <div class="msg">
-                Don't have account? <router-link to="/register">Sing up</router-link>
+                Don't have account?
+                 <router-link to="/register">Sing up</router-link>
          </div>
   </div>
 </template>

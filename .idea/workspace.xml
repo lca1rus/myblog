@@ -5,36 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a927fea2-1e00-4f9d-a233-03be59c8623d" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_7_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_7_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_7_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_7_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_7_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/Service/Impliment/UserImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/Service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/config/MyPasswordEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/config/authentication/MyAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/controller/UserLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/dao/usersmapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/model/loginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/model/vo/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/uitl/MD5Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_7_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_7_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_7_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_7_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_7_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_7_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_15_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_15_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybloggg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyBlog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybloglastest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybloglastest/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/controller/log.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/mapper/usersmapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/mapper/usersmapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybloglastest/src/main/resources/mapper/usersmapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/model/users.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/model/users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/sever/implim/impl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/sever/mapperimlentment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mybloglastest/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/MybloglastestApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/Service/Impliment/UserImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/Service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/config/MyPasswordEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/config/authentication/MyAuthenticationEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/controller/UserLogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/dao/usersmapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/model/loginUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/model/users.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/model/vo/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/java/com/spring/mybloglastest/uitl/MD5Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/mapper/usersmapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/css/about.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/talks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/video/20190313170304814.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/video/backs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/video/d25.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/video/e30642bccad6bb437d460ff827b18239.MP4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/video/music.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/video/music0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/video/music1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/video/pic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/video/qing.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/static/video/re.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/main/resources/templates/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybloglastest/src/test/java/com/spring/mybloglastest/MybloglastestApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/components/Footer/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/Footer/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +83,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2EAGXlQT3c6aHy9iJuUzJCbXCBa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -67,25 +100,97 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../NBlog-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="模块" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.spring.blog.Service" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JAVA\Myblog\Blog\src\main\java\com\spring\blog" />
+      <recent name="D:\JAVA\Myblog\Blog\src\main\resources" />
       <recent name="D:\JAVA\mybloggg\mybloglastest\src\main\resources\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MybloglastestApplication">
-    <configuration name="MybloglastestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="mybloglastest" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.mybloglastest.MybloglastestApplication" />
+  <component name="RunManager" selected="Spring Boot.BlogApplication">
+    <configuration name="BCryptPasswordEncoderUtils.a" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.blog.uitl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring.blog.uitl" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.blog.uitl.BCryptPasswordEncoderUtils" />
+      <option name="METHOD_NAME" value="a" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginService.loadUserByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.blog.Service.Impliment.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring.blog.Service.Impliment" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.blog.Service.Impliment.LoginService" />
+      <option name="METHOD_NAME" value="loadUserByUsername" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyPasswordEncoder.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.blog.Config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring.blog.Config" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.blog.Config.MyPasswordEncoder" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserLogin.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.blog.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring.blog.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.blog.controller.UserLogin" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Blog" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.blog.BlogApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
@@ -103,9 +208,21 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JUnit.UserLogin.login" />
+      <item itemvalue="JUnit.LoginService.loadUserByUsername" />
+      <item itemvalue="JUnit.MyPasswordEncoder.test" />
+      <item itemvalue="JUnit.BCryptPasswordEncoderUtils.a" />
       <item itemvalue="npm.serve" />
-      <item itemvalue="Spring Boot.MybloglastestApplication" />
+      <item itemvalue="Spring Boot.BlogApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyPasswordEncoder.test" />
+        <item itemvalue="JUnit.BCryptPasswordEncoderUtils.a" />
+        <item itemvalue="JUnit.LoginService.loadUserByUsername" />
+        <item itemvalue="JUnit.UserLogin.login" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -119,6 +236,21 @@
       <workItem from="1662031262101" duration="1191000" />
       <workItem from="1662040403887" duration="1757000" />
       <workItem from="1662084905514" duration="11506000" />
+      <workItem from="1662101993232" duration="7589000" />
+      <workItem from="1662126242885" duration="4343000" />
+      <workItem from="1662137780811" duration="2484000" />
+      <workItem from="1662200423733" duration="7770000" />
+      <workItem from="1662216261174" duration="7764000" />
+      <workItem from="1662280846074" duration="11342000" />
+      <workItem from="1662299163415" duration="4170000" />
+      <workItem from="1662303375646" duration="106000" />
+      <workItem from="1662305408202" duration="174000" />
+      <workItem from="1662305678589" duration="234000" />
+      <workItem from="1662305936424" duration="553000" />
+      <workItem from="1662346115037" duration="8419000" />
+      <workItem from="1662356922809" duration="14432000" />
+      <workItem from="1662380279659" duration="1013000" />
+      <workItem from="1662437265514" duration="7167000" />
     </task>
     <servers />
   </component>
@@ -136,5 +268,129 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
+          <line>62</line>
+          <properties class="com.spring.blog.Config.JwtLoginFilter" method="attemptAuthentication">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/MyPasswordEncoder.java</url>
+          <line>24</line>
+          <properties class="com.spring.blog.Config.MyPasswordEncoder" method="test">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtFilter.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtFilter.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtFilter.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtFilter.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtFilter.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtFilter.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtFilter.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtFilter.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtFilter.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtFilter.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
