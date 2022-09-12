@@ -46,7 +46,7 @@ public class LoginService implements  UserDetailsService, LoginUserService {
         //System.out.println("成功");
         //把对应的信息封装成UserDetails
     //   System.out.println(user.getPassword());
-       System.out.println("用户名正确");
+
         return user;
     }
 
