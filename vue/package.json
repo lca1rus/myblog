@@ -21,7 +21,7 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "element-ui": "^2.15.9",
+    "element-ui": "^2.15.10",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "nprogress": "^0.2.0",

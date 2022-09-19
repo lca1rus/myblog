@@ -3,12 +3,12 @@ import NProgress from 'nprogress'
 //import 'nprogress/nprogress.css'
 const request
     = axios.create({
-    baseURL: 'api/user/',
+    baseURL: 'api/',
     timeout: 10000,
 })
 
 
-// ÇëÇóÀ¹½Ø
+// è¯·æ±‚æ‹¦æˆªå™¨
 request.interceptors.request.use(
 
     config => {
@@ -24,7 +24,7 @@ request.interceptors.request.use(
     }
 )
 
-// ÏìÓ¦À¹½Ø
+// å“åº”æ‹¦æˆªå™¨
 request.interceptors.response.use(
 
     config => {

@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Element from 'element-ui'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.config.productionTip = false
 
-Vue.use(Element)
-//全局方法
+Vue.use(ElementUI)
+//全锟街凤拷锟斤拷
 Vue.prototype.msgSuccess = function (msg) {
   this.$message.success(msg)
 }

@@ -76,7 +76,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
              ;
             //自定义JWT过滤器,addFilterBefore（生成的自定义的过滤器的进行过滤的登录路径），该过滤器只在"/user/login"生效
         // 需要在重写的JwtLoginFilter中set，authenticationManager，过滤器过滤的位置UsernamePasswordAuthenticationFilter.class，之前）
-           http .addFilterBefore(new JwtLoginFilter("/user/login",authenticationManager()), UsernamePasswordAuthenticationFilter.class)
+           http .addFilterBefore(new JwtLoginFilter("/login",authenticationManager()), UsernamePasswordAuthenticationFilter.class)
 
             .addFilterBefore(new JwtFilter(),UsernamePasswordAuthenticationFilter.class)
             //未登录时，返回json，而不重定向

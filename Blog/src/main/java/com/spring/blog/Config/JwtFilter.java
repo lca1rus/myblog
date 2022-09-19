@@ -23,8 +23,10 @@ public class JwtFilter extends GenericFilterBean {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
 
-        String jwtToken = request.getHeader("token");
-
+        String jwtToken = request.getHeader("Authorization");
+       if(jwtToken==null){
+           System.out.println("没有token");
+       }
         if (jwtToken != null && !"".equals(jwtToken) && !jwtToken.equals("null")) {//jwtToken不能为null
             try {
                 Claims claims = JwtUtils.jwtparser(jwtToken);//解码token
@@ -38,6 +40,7 @@ public class JwtFilter extends GenericFilterBean {
                 SecurityContextHolder
                         .getContext()
                         .setAuthentication(token);
+                System.out.println("正常进行");
 
             } catch (Exception e) {
                 response.setContentType("application/json;charset=utf-8");

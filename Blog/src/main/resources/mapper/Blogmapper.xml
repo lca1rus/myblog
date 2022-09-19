@@ -19,6 +19,9 @@
         <result property="views" column="views"/>
         <result property="words" column="words"/>
         <result property="readTime" column="readTime"/>
+        <result property="writer_id" column="writerid"/>
+        <result property="isEdit" column="isEdit"></result>
+
 <!--        association 的property的生成是从resultMap id 的model的中生成的-->
         <association property="users" javaType="com.spring.blog.model.Users">
             <id property="id" column="user_id"/>
@@ -51,10 +54,34 @@
 <!--    <sql id="Base_Column_List">-->
 <!--       -->
 <!--    </sql>-->
-<!--查找blog的数据满足分类的的-->
+<!--查找blog的数据满足-->
     <select id="getBlogList" resultMap="blog">
-        SELECT b.id, b.title, b.recommend, b.published, b.createTime, b.updateTime
-     FROM blog AS b,users AS c
-        WHERE b.id=c.id
+    SELECT b.id,b.title,b.content,u.username
+    FROM blog AS b,users AS u
+    WHERE b.writerid=u.id
+    order by b.id
     </select>
+<!--    通过查询到的blog的id进行删除-->
+    <delete id="deleteBlog" parameterType="java.lang.Integer">
+
+        delete from blog AS b
+        where  b.id= #{id,jdbcType=INTEGER}
+    </delete>
+    <update id="updateBlog" >
+        update blog
+        <set>
+        <if test="title!=null">
+        title=#{title},
+        </if>
+            content=#{content},
+        </set>
+        where id=#{id}
+
+    </update>
+<insert id="insertBlog">
+    insert into blog(title,content,createTime)
+value (#{title},#{content},#{createTime})
+</insert>
+
+
 </mapper>

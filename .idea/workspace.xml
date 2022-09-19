@@ -5,43 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a927fea2-1e00-4f9d-a233-03be59c8623d" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/vue/src/components/index/Header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/index/video/20190313170304814.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/index/video/backs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/index/video/d25.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/index/video/e30642bccad6bb437d460ff827b18239.MP4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/index/video/music.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/index/video/music0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/index/video/music1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/index/video/pic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/index/video/qing.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/index/video/re.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/static/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/static/css/about.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/static/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/static/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/static/log.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/static/talks.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/plugins/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/Admin/AdminManger.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/Index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/home/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/login/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/login/register/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/control/BlogList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/plugins/blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/plugins/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/blog/Blog.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/video/20190313170304814.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/video/backs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/video/d25.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/video/e30642bccad6bb437d460ff827b18239.MP4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/video/music.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/video/music0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/video/music1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/video/pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/video/qing.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/video/re.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/Footer/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/Header/index.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/pages/Login/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/pages/Register/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/plugins/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/plugins/axios.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/Admin/AdminManger.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Admin/AdminManger.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/login/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/login/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/login/register/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/login/register/Register.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +39,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -86,7 +74,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.last.edited" value="问题" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
@@ -99,14 +87,14 @@
       <recent name="com.spring.blog.Service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JAVA\Myblog\vue\src\views\login" />
+      <recent name="D:\JAVA\Myblog\vue\src\control" />
+      <recent name="D:\JAVA\Myblog\vue\src\views\blog" />
       <recent name="D:\JAVA\Myblog\vue\src\views\Admin" />
-      <recent name="D:\JAVA\Myblog" />
-      <recent name="D:\JAVA\Myblog\vue" />
-      <recent name="D:\JAVA\Myblog\Blog\src\main\java\com\spring\blog" />
+      <recent name="D:\JAVA\Myblog\vue\node_modules" />
+      <recent name="D:\JAVA\Myblog\vue\src\views\login" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BlogApplication">
+  <component name="RunManager" selected="npm.serve">
     <configuration name="BCryptPasswordEncoderUtils.a" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Blog" />
       <extension name="coverage">
@@ -208,11 +196,11 @@
     <list>
       <item itemvalue="JUnit.MyPasswordEncoder.test" />
       <item itemvalue="JUnit.BCryptPasswordEncoderUtils.a" />
-      <item itemvalue="npm.serve" />
-      <item itemvalue="Spring Boot.BlogApplication" />
       <item itemvalue="JUnit.BlogServiceimpl.getBlogList" />
       <item itemvalue="JUnit.BlogApplicationTests" />
       <item itemvalue="JUnit.BlogApplicationTests.test" />
+      <item itemvalue="npm.serve" />
+      <item itemvalue="Spring Boot.BlogApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -269,6 +257,17 @@
       <workItem from="1662892158558" duration="1640000" />
       <workItem from="1662950330423" duration="5242000" />
       <workItem from="1662960078045" duration="17102000" />
+      <workItem from="1663044881749" duration="9824000" />
+      <workItem from="1663055264208" duration="2524000" />
+      <workItem from="1663115278915" duration="12267000" />
+      <workItem from="1663129891533" duration="10988000" />
+      <workItem from="1663207265170" duration="6312000" />
+      <workItem from="1663219970426" duration="1455000" />
+      <workItem from="1663336472609" duration="21000" />
+      <workItem from="1663411428001" duration="7286000" />
+      <workItem from="1663471882255" duration="12329000" />
+      <workItem from="1663512917625" duration="4385000" />
+      <workItem from="1663555383618" duration="2131000" />
     </task>
     <servers />
   </component>
@@ -321,32 +320,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtFilter.java</url>
-          <line>52</line>
+          <line>55</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/vue/src/components/index/Header.vue</url>
-          <line>44</line>
+          <line>43</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/vue/src/components/index/Header.vue</url>
-          <line>50</line>
+          <line>49</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/vue/src/components/index/Header.vue</url>
-          <line>51</line>
+          <line>50</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/vue/src/components/index/Header.vue</url>
-          <line>52</line>
+          <line>51</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/vue/src/components/index/Header.vue</url>
-          <line>53</line>
+          <line>52</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>

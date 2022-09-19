@@ -26,11 +26,12 @@ import org.springframework.web.bind.annotation.*;
         Users user = loginService.findUserByUsernameAndPassword
                 (userLoginMsg.getUsername(), userLoginMsg.getPassword());
        // System.out.println(user.getUsername());
-        if(user!=null) {
+
          //   System.out.println(user.getUsername());
            // System.out.println(user.getPassword());
-            System.out.println("成功");
-        }
+
+            System.out.println("登录成功");
+
             Result result = Result.ok("成功", Result.ok("22", Result.ok("22", null)));
 
         return result;

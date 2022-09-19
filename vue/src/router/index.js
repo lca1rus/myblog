@@ -8,6 +8,8 @@ import Index from "@/views/Index.vue"
 import Register from "@/views/login/register/Register"
 import Login from "@/views/login/Login.vue"
 import AdminManger from "@/views/Admin/AdminManger";
+import Blog from "@/views/blog/Blog"
+import BlogList from "@/control/BlogList"
 
 const routes = [
 
@@ -22,6 +24,11 @@ const routes = [
 				component:Home,
 				meta: {title: '首页'}
 			},
+            {
+                path:'/blog',
+                name:'blog',
+                component:Blog
+            }
         ]
     },
 
@@ -44,22 +51,22 @@ const routes = [
         path:"/AdminManger",
         component:AdminManger,
         meta:{show:false},
-        // children: [
-        //     {
-        //         path: '/welcome',
-        //         component: Welcome,
-        //         meta: {
-        //             title: '后台管理'
-        //         }
-        //     },
-        //     {
-        //         path: '/blogs',
-        //         component: BlogList,
-        //         meta: {
-        //             title: '博客列表'
-        //         }
-        //     },
-        // ]
+        children: [
+            /* {
+                path: '/welcome',
+                component: Welcome,
+                meta: {
+                    title: '后台管理'
+                }
+            }, */
+            {
+                path: '/BlogList',
+                component: BlogList,
+                meta: {
+                    title: '博客列表'
+                }
+            },
+        ]
 
     },
 

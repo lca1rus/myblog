@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <div class="container">
@@ -7,24 +6,24 @@
         <div v-show="this.$route.meta.show">
           <div class="header">Login</div>
 
-           <!--µÇÂ¼±íµ¥-->
-           <el-form ref="loginForm" :model="loginForm" :rules="loginFormRules" class="login_form">
-             <el-form-item prop="username" class="input-item">
-                 username:
-               <el-input v-model="loginForm.username" prefix-icon="el-icon-user-solid"></el-input>
-             </el-form-item>
+          <!--ÂµÃ‡Ã‚Â¼Â±Ã­ÂµÂ¥-->
+          <el-form ref="loginForm" :model="loginForm" :rules="loginFormRules" class="login_form">
+            <el-form-item prop="username" class="input-item">
+              username:
+              <el-input v-model="loginForm.username" prefix-icon="el-icon-user-solid"></el-input>
+            </el-form-item>
 
-              <el-form-item prop="password">
-                  password:
+            <el-form-item prop="password">
+              password:
               <el-input v-model="loginForm.password" prefix-icon="el-icon-lock"
-           ></el-input>
-           </el-form-item>
+              ></el-input>
+            </el-form-item>
 
-           <el-form-item class="btn">
-             <el-button id="login" type="primary" @click="login">login</el-button>
-           </el-form-item>
+            <el-form-item class="btn">
+              <el-button id="login" type="primary" @click="login">login</el-button>
+            </el-form-item>
 
-           </el-form>
+          </el-form>
           <div class="msg">
             Don't have account?
             <router-link to="/register">Sing up</router-link>
@@ -37,8 +36,8 @@
 </template>
 
 <script>
-import axios from "@/plugins/axios";
 
+import {login} from "@/plugins/login"
 export default {
   name: "Login",
   data() {
@@ -57,48 +56,33 @@ export default {
       }
     }
   },
-
   methods: {
-
-
-     login() {
-
-
+    login() {
       this.$refs.loginForm.validate(valid => {
-
         if (valid) {
           login(this.loginForm.username, this.loginForm.password)
               .then(res => {
                 if (res.code === 200) {
                   this.msgSuccess(res.msg);
-                  alert(res.msg)
+                  //alert(res.msg)
                   window.sessionStorage.setItem('token', res.data.token)
+                  this.$router.push({path: '/'})
+
                 }
-        else {
-                  alert(res.msg)
+                else {
+                  //alert(res.msg)
                   this.msgError(res.msg)
                 }
               })
               .catch(() => {
-            this.msgError("ÇëÇóÊ§°Ü")
-          })
+                this.msgError("Ã‡Ã«Ã‡Ã³ÃŠÂ§Â°Ãœ")
+              })
         }
       })
     }
   }
 }
 
-
-export function login(username, password) {
-  return axios({
-    url: 'login',
-    method: 'POST',
-    data: {
-      username,
-      password
-    }
-  })
-}
 </script>
 
 <style>
@@ -111,23 +95,21 @@ export function login(username, password) {
 html {
   height: 100%;
 }
-
 body {
   height: 100%;
 }
 .container {
-    position:fixed;
+  position:fixed;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
 }
-
 .login-wrapper {
   background-color: #fff;
   width: 250px;
   height: 500px;
   padding: 0 50px;
- /*  position: relative; */
+  /*  position: relative; */
   left: 50%;
   border-radius: 15px;
   top: 500%;
@@ -149,11 +131,9 @@ body {
   font-size: 15px;
   outline: none;
 }
-
 .input-item::placeholder {
   text-transform: uppercase;
 }
-
 .btn {
   text-align: center;
   padding: 5px;
@@ -169,7 +149,6 @@ body {
   text-align: center;
   line-height: 80px;
 }
-
 .msg a {
   text-decoration-line: none;
   color: #a6c1ee;
