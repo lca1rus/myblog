@@ -1,11 +1,9 @@
 package com.spring.blog.controller;
 
 
-import com.spring.blog.Service.Impliment.LoginService;
-import com.spring.blog.model.UserLoginMsg;
-import com.spring.blog.model.Users;
+import com.spring.blog.Service.Impliment.LoginServiceimpl;
+import com.spring.blog.model.entity.Usermodel.Users;
 import com.spring.blog.model.vo.Result;
-import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
     public class UserLogin_controller {
         @Autowired
-        private LoginService loginService;
+        private LoginServiceimpl loginService;
 
 
         @RequestMapping("/hello")
@@ -22,7 +20,7 @@ import org.springframework.web.bind.annotation.*;
         }
 
     @PostMapping("/login")
-    public Result login(@RequestBody UserLoginMsg userLoginMsg) {
+    public Result login(@RequestBody Users userLoginMsg) {
         Users user = loginService.findUserByUsernameAndPassword
                 (userLoginMsg.getUsername(), userLoginMsg.getPassword());
        // System.out.println(user.getUsername());

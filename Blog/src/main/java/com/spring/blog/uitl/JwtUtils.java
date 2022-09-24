@@ -23,7 +23,7 @@ public class JwtUtils {
 
         return jwt;
     }
-    public static Claims jwtparser(String  jwtToken){
+    public static Claims jwtparser(String  jwtToken){//解析密文
         Claims claims=Jwts.parser()
                 .setSigningKey(secretKey)
                 .parseClaimsJws(jwtToken.replace("Bearer", ""))

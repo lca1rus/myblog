@@ -1,14 +1,14 @@
 package com.spring.blog.controller;
 
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.spring.blog.Service.Impliment.BlogServiceimpl;
-import com.spring.blog.model.Blogmodel.Blog;
+import com.spring.blog.model.entity.Blogmodel.Blog;
+import com.spring.blog.model.vo.AdminBlogInfo;
+import com.spring.blog.model.vo.PageResult;
 import com.spring.blog.model.vo.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.PrintWriter;
 import java.sql.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -20,18 +20,17 @@ public class Blog_controller  {
   private   BlogServiceimpl blogService;
 
     @GetMapping("/GetBlogs")
-    public Result GetBlogs() {
+    public Result GetBlogs(@RequestParam(defaultValue = "1") Integer pageNum) {
 
         try {
 
-            List<Blog> blogs = blogService.getBlogList();
-            Map<String, Object> map = new HashMap<>();
-            map.put("blogs", blogs);
-            System.out.println("成功get");
-            return Result.ok("请求成功", map);
+            PageResult<AdminBlogInfo> blogs = blogService.getBlogList(pageNum);
+
+            return Result.ok("请求成功", blogs);
         }
 
         catch (Exception e) {
+            System.out.println(e.getMessage());
                 return Result.create(500, "异常错误");
             }
 

@@ -2,11 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
-
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
 Vue.config.productionTip = false
-
+Vue.use(mavonEditor)
 Vue.use(ElementUI)
-//ȫ�ַ���
 Vue.prototype.msgSuccess = function (msg) {
   this.$message.success(msg)
 }

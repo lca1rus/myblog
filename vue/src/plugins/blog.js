@@ -1,9 +1,12 @@
 import axios from "@/plugins/axios";
 
-export function GetBlogs() {
+export function GetBlogs(pagenums) {
     return axios({
         url: 'GetBlogs',
         method: 'GET',
+        params: {
+            pagenums
+        }
 
     })
 }

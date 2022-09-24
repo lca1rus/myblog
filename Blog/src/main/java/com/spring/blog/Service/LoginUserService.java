@@ -1,6 +1,6 @@
 package com.spring.blog.Service;
 
-import com.spring.blog.model.Users;
+import com.spring.blog.model.entity.Usermodel.Users;
 
 public interface LoginUserService {
 

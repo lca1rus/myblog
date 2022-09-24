@@ -1,7 +1,7 @@
 package com.spring.blog.dao;
 
 
-import com.spring.blog.model.Users;
+import com.spring.blog.model.entity.Usermodel.Users;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 

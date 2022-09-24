@@ -3,7 +3,7 @@
 <mapper namespace="com.spring.blog.dao.usersmapper">
 
 
-    <resultMap id="BaseResultMap" type="com.spring.blog.model.Users">
+    <resultMap id="BaseResultMap" type="com.spring.blog.model.entity.Usermodel.Users">
 
         <id property="id" column="id"/>
         <result column="username" property="username" />

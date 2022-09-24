@@ -5,31 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a927fea2-1e00-4f9d-a233-03be59c8623d" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/vue/src/control/BlogList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/plugins/blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/plugins/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/blog/Blog.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/video/20190313170304814.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/video/backs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/video/d25.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/video/e30642bccad6bb437d460ff827b18239.MP4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/video/music.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/video/music0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/video/music1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/video/pic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/video/qing.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/video/re.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson2_fastjson2_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson2_fastjson2_extension_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_6_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_79_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_79_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_79_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_79_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_79_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_79_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_79_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_4_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_6_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_3_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_3_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/components/el-breadcrumb.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/blog/WriteBlog.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/components/index/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/index/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/control/BlogList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/control/BlogList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/plugins/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/plugins/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/plugins/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/plugins/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/Admin/AdminManger.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Admin/AdminManger.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/login/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/login/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/login/register/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/login/register/Register.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +44,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
-        <option value="Class" />
-        <option value="Interface" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,16 +87,19 @@
     <property name="ts.external.directory.path" value="D:\Ideajava\IntelliJ IDEA 2021.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.spring.blog.Service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JAVA\Myblog\vue\src\views" />
       <recent name="D:\JAVA\Myblog\vue\src\control" />
       <recent name="D:\JAVA\Myblog\vue\src\views\blog" />
       <recent name="D:\JAVA\Myblog\vue\src\views\Admin" />
       <recent name="D:\JAVA\Myblog\vue\node_modules" />
-      <recent name="D:\JAVA\Myblog\vue\src\views\login" />
     </key>
   </component>
   <component name="RunManager" selected="npm.serve">
@@ -267,7 +275,17 @@
       <workItem from="1663411428001" duration="7286000" />
       <workItem from="1663471882255" duration="12329000" />
       <workItem from="1663512917625" duration="4385000" />
-      <workItem from="1663555383618" duration="2131000" />
+      <workItem from="1663555383618" duration="4024000" />
+      <workItem from="1663586090470" duration="5652000" />
+      <workItem from="1663728625760" duration="65000" />
+      <workItem from="1663848022943" duration="1602000" />
+      <workItem from="1663856487132" duration="32000" />
+      <workItem from="1663858704039" duration="1052000" />
+      <workItem from="1663932405063" duration="605000" />
+      <workItem from="1663933023373" duration="5554000" />
+      <workItem from="1663943686284" duration="3862000" />
+      <workItem from="1663984903404" duration="6254000" />
+      <workItem from="1663991217732" duration="6379000" />
     </task>
     <servers />
   </component>
@@ -294,8 +312,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
-          <line>62</line>
-          <properties class="com.spring.blog.Config.JwtLoginFilter">
+          <line>56</line>
+          <properties class="com.spring.blog.Config.JwtLoginFilter" method="attemptAuthentication">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="2" />
@@ -310,18 +328,73 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
-          <line>47</line>
+          <line>41</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
-          <line>48</line>
+          <line>42</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtFilter.java</url>
-          <line>55</line>
+          <line>54</line>
           <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/controller/Blog_controller.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/controller/Blog_controller.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/controller/Blog_controller.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/vue/src/components/index/Header.vue</url>
@@ -347,6 +420,24 @@
           <url>file://$PROJECT_DIR$/vue/src/components/index/Header.vue</url>
           <line>52</line>
           <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/vue/src/views/control/BlogList.vue</url>
+          <line>80</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/vue/src/views/control/BlogList.vue</url>
+          <line>77</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/vue/src/views/control/BlogList.vue</url>
+          <line>78</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

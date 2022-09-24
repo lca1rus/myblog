@@ -10,7 +10,7 @@
         <a href="index.html"><span>Home</span></a>
 
         <router-link to="/AdminManger"><span>Admin</span></router-link>
-        <a href="about.html"><span>About</span></a>
+        <router-link to="/WriteBlog"><span>Write</span></router-link>
         <a href="form.html"><span>Form</span></a>
         <router-link to="/login"><span>login</span></router-link>
      </div>

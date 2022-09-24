@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.spring.blog.dao.Blogmaoper">
 
-    <resultMap id="blog" type="com.spring.blog.model.Blogmodel.Blog">
+    <resultMap id="blog" type="com.spring.blog.model.entity.Blogmodel.Blog">
         <id property="id" column="id"/>
         <result property="title" column="title"/>
         <result property="content" column="content"/>
@@ -23,7 +23,7 @@
         <result property="isEdit" column="isEdit"></result>
 
 <!--        association 的property的生成是从resultMap id 的model的中生成的-->
-        <association property="users" javaType="com.spring.blog.model.Users">
+        <association property="users" javaType="com.spring.blog.model.entity.Usermodel.Users">
             <id property="id" column="user_id"/>
             <result property="username" column="username"/>
             <result property="email" column="email"/>
@@ -38,24 +38,38 @@
      </association>-->
 
 
-        <association property="category" javaType="com.spring.blog.model.Blogmodel.Category">
+        <association property="category" javaType="com.spring.blog.model.entity.Blogmodel.Category">
             <id property="id" column="category_id"/>
             <result property="name" column="category_name"/>
         </association>
 
 
-        <collection property="tags" javaType="com.spring.blog.model.Blogmodel.Tag">
+        <collection property="tags" javaType="com.spring.blog.model.entity.Blogmodel.Tag">
             <id property="id" column="tag_id"/>
             <result property="name" column="tag_name"/>
             <result property="color" column="color"/>
         </collection>
     </resultMap>
 
+    <resultMap id="AdminBlogInfo" type="com.spring.blog.model.vo.AdminBlogInfo">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="writer_id" column="writerid"/>
+        <result property="isEdit" column="isEdit"></result>
+
+        <association property="userLoginMsg" javaType="com.spring.blog.model.vo.UserLoginMsg">
+            <id property="id" column="user_id"/>
+            <result property="username" column="username"/>
+        </association>
+    </resultMap>
+
+
 <!--    <sql id="Base_Column_List">-->
 <!--       -->
 <!--    </sql>-->
 <!--查找blog的数据满足-->
-    <select id="getBlogList" resultMap="blog">
+    <select id="getBlogList" resultMap="AdminBlogInfo">
     SELECT b.id,b.title,b.content,u.username
     FROM blog AS b,users AS u
     WHERE b.writerid=u.id

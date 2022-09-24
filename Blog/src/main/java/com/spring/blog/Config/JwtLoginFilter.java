@@ -3,14 +3,9 @@ package com.spring.blog.Config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import com.spring.blog.model.Users;
+import com.spring.blog.model.entity.Usermodel.Users;
 import com.spring.blog.model.vo.Result;
 import com.spring.blog.uitl.JwtUtils;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
-import org.apache.catalina.User;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.*;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
@@ -23,7 +18,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 //登录拦截和成功后的赋权token
@@ -76,7 +70,7 @@ public class JwtLoginFilter extends AbstractAuthenticationProcessingFilter {
             Authentication authentication=
                     getAuthenticationManager().authenticate(usernamePasswordAuthenticationToken);
             //会调用UserDetailsService中的loadUserByUsername进行验证
-            System.out.println(authentication);
+           // System.out.println(authentication);
             return authentication;
 
         } catch (Exception exception) {

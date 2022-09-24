@@ -24,12 +24,11 @@ public class JwtFilter extends GenericFilterBean {
         HttpServletResponse response = (HttpServletResponse) servletResponse;
 
         String jwtToken = request.getHeader("Authorization");
-       if(jwtToken==null){
-           System.out.println("没有token");
-       }
+
         if (jwtToken != null && !"".equals(jwtToken) && !jwtToken.equals("null")) {//jwtToken不能为null
             try {
                 Claims claims = JwtUtils.jwtparser(jwtToken);//解码token
+
                 String username = claims.getSubject();//获取当前登录用户名
 //		        List<GrantedAuthority> authorities = AuthorityUtils.commaSeparatedStringToAuthorityList((String) claims.get("authorities"));
 

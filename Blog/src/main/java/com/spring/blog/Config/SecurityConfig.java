@@ -1,26 +1,21 @@
 package com.spring.blog.Config;
 
 
-import com.spring.blog.Service.Impliment.LoginService;
+import com.spring.blog.Service.Impliment.LoginServiceimpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
-import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
-    LoginService loginService;
+    LoginServiceimpl loginService;
     @Autowired
     MyAuthenticationEntryPoint myAuthenticationEntryPoint;
     @Autowired
@@ -76,7 +71,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
              ;
             //自定义JWT过滤器,addFilterBefore（生成的自定义的过滤器的进行过滤的登录路径），该过滤器只在"/user/login"生效
         // 需要在重写的JwtLoginFilter中set，authenticationManager，过滤器过滤的位置UsernamePasswordAuthenticationFilter.class，之前）
-           http .addFilterBefore(new JwtLoginFilter("/login",authenticationManager()), UsernamePasswordAuthenticationFilter.class)
+           http .addFilterBefore(new JwtLoginFilter("/login",
+                           authenticationManager()), UsernamePasswordAuthenticationFilter.class)
 
             .addFilterBefore(new JwtFilter(),UsernamePasswordAuthenticationFilter.class)
             //未登录时，返回json，而不重定向
