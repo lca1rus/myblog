@@ -1,8 +1,7 @@
 package com.spring.blog.controller;
 
 
-import com.spring.blog.Service.Impliment.BlogServiceimpl;
-import com.spring.blog.model.entity.Blogmodel.Blog;
+import com.spring.blog.Service.Impliment.BlogServiceImpl;
 import com.spring.blog.model.vo.AdminBlogInfo;
 import com.spring.blog.model.vo.PageResult;
 import com.spring.blog.model.vo.Result;
@@ -10,14 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+
 
 @RestController
 public class Blog_controller  {
     @Autowired
-  private   BlogServiceimpl blogService;
+  private BlogServiceImpl blogService;
 
     @GetMapping("/GetBlogs")
     public Result GetBlogs(@RequestParam(defaultValue = "1") Integer pageNum) {
@@ -38,7 +35,6 @@ public class Blog_controller  {
     }
     @DeleteMapping("/deleteBlogs")
     public Result deleteBlogs(@RequestParam int id) {
-        System.out.println("id");
         try {
                 blogService.deleteBlog(id);
 

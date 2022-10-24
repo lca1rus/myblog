@@ -11,7 +11,7 @@ public class JacksonUtils {
     private static ObjectMapper objectMapper = new ObjectMapper();
 
     public static String writeValueAsString(Object value) {
-        try {
+        try {//反序列化将java对象转化为string
             return objectMapper.writeValueAsString(value);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
@@ -20,7 +20,7 @@ public class JacksonUtils {
     }
 
     public static <T> T readValue(String content, Class<T> valueType) {
-        try {
+        try {//
             return objectMapper.readValue(content, valueType);
         } catch (IOException e) {
             e.printStackTrace();

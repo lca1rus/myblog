@@ -1,7 +1,7 @@
 package com.spring.blog.Config;
 
 
-import com.spring.blog.Service.Impliment.LoginServiceimpl;
+import com.spring.blog.Service.Impliment.LoginServiceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +15,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
-    LoginServiceimpl loginService;
+    LoginServiceImpl loginService;
     @Autowired
     MyAuthenticationEntryPoint myAuthenticationEntryPoint;
     @Autowired
@@ -61,28 +61,26 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 //任何经过JWT验证的请求都通过
                 .authorizeRequests()
-            //   .mvcMatchers("/user/login").anonymous()//对登录接口允许匿名访问
-           //     .antMatchers(HttpMethod.POST,"/user/login").permitAll()
-                .anyRequest().authenticated()//除了以上接口都需要认证
+
+               .antMatchers("/ws").permitAll()
+                //使ws经过security的过滤检查，但仍然放行通过，如果有带token任然会被检查
+
+                .anyRequest().authenticated();//除了以上接口都需要认证
                 // 自定义JWT过滤器
                 //JwtLoginFilter放在token
                 //配置登录路径
 
-             ;
+
             //自定义JWT过滤器,addFilterBefore（生成的自定义的过滤器的进行过滤的登录路径），该过滤器只在"/user/login"生效
         // 需要在重写的JwtLoginFilter中set，authenticationManager，过滤器过滤的位置UsernamePasswordAuthenticationFilter.class，之前）
-           http .addFilterBefore(new JwtLoginFilter("/login",
+
+        http.addFilterBefore(new JwtLoginFilter("/login",
                            authenticationManager()), UsernamePasswordAuthenticationFilter.class)
 
             .addFilterBefore(new JwtFilter(),UsernamePasswordAuthenticationFilter.class)
-            //未登录时，返回json，而不重定向
+            //通过过滤器检查出没有带token时跳转在此
                     .exceptionHandling().authenticationEntryPoint(myAuthenticationEntryPoint);
-//
-
 
 
     }
-
-
-
 }

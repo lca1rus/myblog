@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import io.jsonwebtoken.Claims;
 public class JwtFilter extends GenericFilterBean {
+
 //jwt的拦截器，如果没有token认证被拦截
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse,
                          FilterChain filterChain) throws IOException, ServletException {
@@ -36,10 +37,12 @@ public class JwtFilter extends GenericFilterBean {
                 UsernamePasswordAuthenticationToken token =
                         new UsernamePasswordAuthenticationToken(username, null, null);
 //通过用户名得到该
+
+
                 SecurityContextHolder
                         .getContext()
                         .setAuthentication(token);
-                System.out.println("正常进行");
+                System.out.println("jwtFilter成功进行中");
 
             } catch (Exception e) {
                 response.setContentType("application/json;charset=utf-8");
@@ -49,8 +52,11 @@ public class JwtFilter extends GenericFilterBean {
                 out.flush();
                 out.close();
             }
-        }
 
+        }
+else {
+            System.out.println("token为空被拦截");
+        }
 
         filterChain.doFilter(request, servletResponse);
         //token为空放行，或者存储 SecurityContextHolder后再放行

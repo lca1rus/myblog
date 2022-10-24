@@ -5,36 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a927fea2-1e00-4f9d-a233-03be59c8623d" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson2_fastjson2_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson2_fastjson2_extension_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_6_1_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_79_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_79_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_79_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_79_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_79_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_79_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_79_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_4_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_6_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_3_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_3_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/el-breadcrumb.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/blog/WriteBlog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jdproduct1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/index/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/index/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/control/BlogList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/control/BlogList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/plugins/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/plugins/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/control/BlogList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/control/BlogList.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +28,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2EAGXlQT3c6aHy9iJuUzJCbXCBa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -62,31 +39,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="问题" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
-    <property name="show.run.dashboard.notification" value="false" />
-    <property name="ts.external.directory.path" value="D:\Ideajava\IntelliJ IDEA 2021.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/杜厚锐/vue",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "be8df1f28c0abc85a0ed0c6860e5d832",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -102,19 +74,16 @@
       <recent name="D:\JAVA\Myblog\vue\node_modules" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.serve">
-    <configuration name="BCryptPasswordEncoderUtils.a" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.BlogApplication">
+    <configuration name="getpython" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spring.blog.python.getpython" />
       <module name="Blog" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spring.blog.uitl.*" />
+          <option name="PATTERN" value="com.spring.blog.python.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.spring.blog.uitl" />
-      <option name="MAIN_CLASS_NAME" value="com.spring.blog.uitl.BCryptPasswordEncoderUtils" />
-      <option name="METHOD_NAME" value="a" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,16 +119,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BlogServiceimpl.getBlogList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BlogServiceImpl.getBlogList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Blog" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spring.blog.Service.Impliment.*" />
+          <option name="PATTERN" value="com.spring.blog.Config.Redis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.spring.blog.Service.Impliment" />
-      <option name="MAIN_CLASS_NAME" value="com.spring.blog.Service.Impliment.BlogServiceimpl" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.blog.Service.Impliment.BlogServiceImpl" />
       <option name="METHOD_NAME" value="getBlogList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -170,7 +139,7 @@
       <module name="Blog" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spring.blog.Config.*" />
+          <option name="PATTERN" value="com.spring.blog.Config.Redis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,9 +153,8 @@
     </configuration>
     <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Blog" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.blog.BlogApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.blog.BlogApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -202,25 +170,28 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JUnit.BlogServiceImpl.getBlogList" />
       <item itemvalue="JUnit.MyPasswordEncoder.test" />
-      <item itemvalue="JUnit.BCryptPasswordEncoderUtils.a" />
-      <item itemvalue="JUnit.BlogServiceimpl.getBlogList" />
       <item itemvalue="JUnit.BlogApplicationTests" />
       <item itemvalue="JUnit.BlogApplicationTests.test" />
       <item itemvalue="npm.serve" />
       <item itemvalue="Spring Boot.BlogApplication" />
+      <item itemvalue="应用程序.getpython" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.getpython" />
         <item itemvalue="JUnit.BlogApplicationTests.test" />
         <item itemvalue="JUnit.BlogApplicationTests" />
-        <item itemvalue="JUnit.BlogServiceimpl.getBlogList" />
+        <item itemvalue="JUnit.BlogServiceImpl.getBlogList" />
         <item itemvalue="JUnit.MyPasswordEncoder.test" />
-        <item itemvalue="JUnit.BCryptPasswordEncoderUtils.a" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="a927fea2-1e00-4f9d-a233-03be59c8623d" name="变更" comment="" />
@@ -286,6 +257,35 @@
       <workItem from="1663943686284" duration="3862000" />
       <workItem from="1663984903404" duration="6254000" />
       <workItem from="1663991217732" duration="6379000" />
+      <workItem from="1664168917072" duration="1960000" />
+      <workItem from="1664361493150" duration="668000" />
+      <workItem from="1664605239521" duration="24000" />
+      <workItem from="1664685145388" duration="102000" />
+      <workItem from="1664849505672" duration="787000" />
+      <workItem from="1665044998688" duration="754000" />
+      <workItem from="1665135716389" duration="9009000" />
+      <workItem from="1665150578787" duration="7953000" />
+      <workItem from="1665200412819" duration="3905000" />
+      <workItem from="1665218881641" duration="14357000" />
+      <workItem from="1665293137232" duration="8143000" />
+      <workItem from="1665370889178" duration="1345000" />
+      <workItem from="1665419726207" duration="24000" />
+      <workItem from="1665543811864" duration="2107000" />
+      <workItem from="1665573223370" duration="1709000" />
+      <workItem from="1665839420596" duration="332000" />
+      <workItem from="1665905769951" duration="3105000" />
+      <workItem from="1665924097260" duration="624000" />
+      <workItem from="1665972929323" duration="1250000" />
+      <workItem from="1666002076052" duration="11000" />
+      <workItem from="1666175335528" duration="10435000" />
+      <workItem from="1666187238257" duration="11285000" />
+      <workItem from="1666245454883" duration="5127000" />
+      <workItem from="1666267181280" duration="329000" />
+      <workItem from="1666280685821" duration="2027000" />
+      <workItem from="1666321366084" duration="7271000" />
+      <workItem from="1666499782760" duration="3469000" />
+      <workItem from="1666580438589" duration="3102000" />
+      <workItem from="1666596537726" duration="1364000" />
     </task>
     <servers />
   </component>
@@ -302,7 +302,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -312,7 +311,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
-          <line>56</line>
+          <line>57</line>
           <properties class="com.spring.blog.Config.JwtLoginFilter" method="attemptAuthentication">
             <option name="EMULATED" value="true" />
           </properties>
@@ -326,75 +325,54 @@
           </properties>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceImpl.java</url>
+          <line>35</line>
+          <properties class="com.spring.blog.Service.Impliment.BlogServiceImpl" method="getBlogList">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
-          <line>41</line>
+          <line>42</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtLoginFilter.java</url>
-          <line>42</line>
+          <line>43</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/JwtFilter.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="31" />
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Config/WebSocket/MyWsInterceptor.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="46" />
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/python/getpython.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceImpl.java</url>
           <line>46</line>
-          <option name="timeStamp" value="49" />
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="50" />
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceImpl.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="51" />
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceImpl.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceimpl.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/controller/Blog_controller.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/controller/Blog_controller.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/controller/Blog_controller.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="56" />
+          <url>file://$PROJECT_DIR$/Blog/src/main/java/com/spring/blog/Service/Impliment/BlogServiceImpl.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/vue/src/components/index/Header.vue</url>
@@ -420,24 +398,6 @@
           <url>file://$PROJECT_DIR$/vue/src/components/index/Header.vue</url>
           <line>52</line>
           <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/vue/src/views/control/BlogList.vue</url>
-          <line>80</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/vue/src/views/control/BlogList.vue</url>
-          <line>77</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/vue/src/views/control/BlogList.vue</url>
-          <line>78</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

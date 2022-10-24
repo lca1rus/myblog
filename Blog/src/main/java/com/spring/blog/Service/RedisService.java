@@ -1,6 +1,5 @@
 package com.spring.blog.Service;
 
-import com.spring.blog.model.entity.Blogmodel.Blog;
 import com.spring.blog.model.vo.AdminBlogInfo;
 import com.spring.blog.model.vo.PageResult;
 
@@ -8,9 +7,16 @@ import java.util.List;
 import java.util.Map;
 
 public interface RedisService {
-    //PageResult<Blog> getBlogInfoPageResultByHash(String hash, Integer pageNum);
-    PageResult<AdminBlogInfo> RedisgetBlogList(String hash, String pageNum);
+    public boolean RedisGetUser_State(String hash, String username) ;
+    PageResult RedisGetBlogList(String hash, String pageNum);
     void saveKVToHash(String hash, Object key, Object value);
+
+    boolean setnx_lock(String key,double LOCK,long expire_time);
+
+    Object getByString(String key);
+    Object DeleteByString(String key);
+
+    Long DeleteByHashKey(String hash_key,String key);
 
     void saveMapToHash(String hash, Map map);
 

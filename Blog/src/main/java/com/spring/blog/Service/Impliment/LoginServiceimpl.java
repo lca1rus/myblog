@@ -1,6 +1,6 @@
 package com.spring.blog.Service.Impliment;
 
-import com.spring.blog.Service.LoginUserService;
+import com.spring.blog.Service.LoginService;
 import com.spring.blog.dao.usersmapper;
 import com.spring.blog.model.entity.Usermodel.Users;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 用户已经登录的认证
  */
 @Service
-public class LoginServiceimpl implements  UserDetailsService, LoginUserService {
+public class LoginServiceImpl implements  UserDetailsService, LoginService {
 
     @Autowired
    private usersmapper usersmapper;

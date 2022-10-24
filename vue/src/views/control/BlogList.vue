@@ -75,9 +75,8 @@ export default {
    methods: {
 
      getbloglist() {
-       GetBlogs(1)
+       GetBlogs()
            .then(res => {
-console.log("ok")
              this.bloglists = res.data.list;
            })
      },
@@ -116,8 +115,6 @@ console.log("ok")
         })
       })
      },
-
-
 
     update(row){
       row.edit = true;

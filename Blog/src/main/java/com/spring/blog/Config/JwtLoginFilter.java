@@ -25,6 +25,7 @@ import java.util.Map;
 
 public class JwtLoginFilter extends AbstractAuthenticationProcessingFilter {
 
+
     protected JwtLoginFilter(String defaultFilterProcessesUrl, AuthenticationManager authenticationManager) {
         super(new AntPathRequestMatcher(defaultFilterProcessesUrl));
         setAuthenticationManager(authenticationManager);//需要setAuthenticationManager
@@ -74,7 +75,7 @@ public class JwtLoginFilter extends AbstractAuthenticationProcessingFilter {
             return authentication;
 
         } catch (Exception exception) {
-         //   System.out.println(exception.getMessage());
+
             response.setContentType("application/json;charset=utf-8");
             Result result = Result.create(400, "非法请求");
             PrintWriter out = response.getWriter();
@@ -90,19 +91,20 @@ public class JwtLoginFilter extends AbstractAuthenticationProcessingFilter {
                                             FilterChain chain, Authentication authResult)
             throws IOException, ServletException {
         response.setContentType("application/json;charset=utf-8");
-
+//authResult封装好的user登录信息
         String jwt= JwtUtils.createjwt(authResult);//生成密文
 
         Users user = (Users) authResult.getPrincipal();
         //接验证成功后收到的Authentication转化为Users
       //  System.out.println("user是:"+user.getUsername());
         System.out.println("token是："+jwt);
-        user.setPassword(null);
+        user.setPassword(null);//传给前端的密码设为null防止被盗取
         Map<String, Object> map = new HashMap<>();
         map.put("user", user);
         map.put("token", jwt);
         Result result = Result.ok("登录成功", map);
         PrintWriter out = response.getWriter();
+
         out.write(new ObjectMapper().writeValueAsString(result));//将成功的结果传给前端，并且传入map中的user与token
         out.flush();
         out.close();
