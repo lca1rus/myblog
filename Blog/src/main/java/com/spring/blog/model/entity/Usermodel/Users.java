@@ -8,21 +8,20 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.Date;
 
 @NoArgsConstructor
 @Getter
 @Setter
 @ToString
 public class Users implements UserDetails {
-
     private Integer id;
-
-
     private String username;
-
-
     private String password;
-
+    private String email;
+    private Date createTime;
+    private Date updateTime;
+    private String role;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

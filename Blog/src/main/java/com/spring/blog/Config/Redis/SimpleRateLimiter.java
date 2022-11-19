@@ -9,11 +9,11 @@ import org.springframework.data.redis.core.SessionCallback;
 import java.util.UUID;
 
 public class SimpleRateLimiter {
-
+//redis流量控制
     @Autowired
     RedisTemplate redisTemplate;
     static long count=Integer.MAX_VALUE;
-    public boolean isActionAllowed(String key, int max_count, int period) {
+    public boolean isActionAllowed(String key, int max_count, int period) {//当同一时间段内的某个请求超过限制的最大数量时，会决定是否开始
         double now_time=System.currentTimeMillis();
         String uid=UUID.randomUUID().toString();
 

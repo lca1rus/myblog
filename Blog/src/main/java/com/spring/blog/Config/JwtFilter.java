@@ -23,6 +23,7 @@ public class JwtFilter extends GenericFilterBean {
                          FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
+        //后台管理路径外的请求直接跳过，无需登录拦截
 
         String jwtToken = request.getHeader("Authorization");
 
@@ -31,18 +32,17 @@ public class JwtFilter extends GenericFilterBean {
                 Claims claims = JwtUtils.jwtparser(jwtToken);//解码token
 
                 String username = claims.getSubject();//获取当前登录用户名
-//		        List<GrantedAuthority> authorities = AuthorityUtils.commaSeparatedStringToAuthorityList((String) claims.get("authorities"));
 
                 //TODO 获得权限信息传入authorities中
+
                 UsernamePasswordAuthenticationToken token =
                         new UsernamePasswordAuthenticationToken(username, null, null);
-//通过用户名得到该
+                //通过用户名得到该
 
 
                 SecurityContextHolder
                         .getContext()
                         .setAuthentication(token);
-                System.out.println("jwtFilter成功进行中");
 
             } catch (Exception e) {
                 response.setContentType("application/json;charset=utf-8");
@@ -54,11 +54,8 @@ public class JwtFilter extends GenericFilterBean {
             }
 
         }
-else {
-            System.out.println("token为空被拦截");
-        }
 
-        filterChain.doFilter(request, servletResponse);
+        filterChain.doFilter(servletRequest, servletResponse);
         //token为空放行，或者存储 SecurityContextHolder后再放行
 
 

@@ -28,6 +28,7 @@ public class JwtLoginFilter extends AbstractAuthenticationProcessingFilter {
 
     protected JwtLoginFilter(String defaultFilterProcessesUrl, AuthenticationManager authenticationManager) {
         super(new AntPathRequestMatcher(defaultFilterProcessesUrl));
+
         setAuthenticationManager(authenticationManager);//需要setAuthenticationManager
     }
 
@@ -56,13 +57,13 @@ public class JwtLoginFilter extends AbstractAuthenticationProcessingFilter {
     后面会对比这个实体类里的用户名和密码和 页面传过来 的进行对比。
      */
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response)
-            throws AuthenticationException, IOException, ServletException {
+            throws AuthenticationException, IOException {
 
         try {
             if (!"POST".equals(request.getMethod())) {//前端提交的请求必须是post请求不是就会抛出异常
                 throw new Exception();
             }
-            Users user = new ObjectMapper().readValue(request.getInputStream(), Users.class);//得到输入的用户
+            Users user = new ObjectMapper().readValue(request.getInputStream(), Users.class);//得到输入的用户的信息
 
 
             UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken=
@@ -70,6 +71,9 @@ public class JwtLoginFilter extends AbstractAuthenticationProcessingFilter {
 
             Authentication authentication=
                     getAuthenticationManager().authenticate(usernamePasswordAuthenticationToken);
+            //调用service重写的方法，通过用户名从数据库中取出对应的user数据，然后比对其中的密码是否与输出的密码相同
+
+
             //会调用UserDetailsService中的loadUserByUsername进行验证
            // System.out.println(authentication);
             return authentication;
@@ -97,14 +101,13 @@ public class JwtLoginFilter extends AbstractAuthenticationProcessingFilter {
         Users user = (Users) authResult.getPrincipal();
         //接验证成功后收到的Authentication转化为Users
       //  System.out.println("user是:"+user.getUsername());
-        System.out.println("token是："+jwt);
         user.setPassword(null);//传给前端的密码设为null防止被盗取
         Map<String, Object> map = new HashMap<>();
         map.put("user", user);
         map.put("token", jwt);
         Result result = Result.ok("登录成功", map);
-        PrintWriter out = response.getWriter();
 
+        PrintWriter out = response.getWriter();
         out.write(new ObjectMapper().writeValueAsString(result));//将成功的结果传给前端，并且传入map中的user与token
         out.flush();
         out.close();

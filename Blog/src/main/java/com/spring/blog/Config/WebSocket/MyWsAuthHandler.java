@@ -35,6 +35,7 @@ public class MyWsAuthHandler extends TextWebSocketHandler {
         if (token != null) {
             // 用户连接成功，放入在线用户缓存
             MyWsSessionManager.add(token.toString(), session);
+            System.out.println("放入一个");
         } else {
             throw new RuntimeException("用户登录已经失效!");
         }

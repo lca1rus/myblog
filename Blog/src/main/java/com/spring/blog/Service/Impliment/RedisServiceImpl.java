@@ -156,7 +156,7 @@ public class RedisServiceImpl implements RedisService {
 
     @Override
     public void deleteCacheByKey(String key) {
-
+        redisTemplate.delete(key);
     }
 
     @Override

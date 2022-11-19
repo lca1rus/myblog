@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 public interface RedisService {
+
     public boolean RedisGetUser_State(String hash, String username) ;
     PageResult RedisGetBlogList(String hash, String pageNum);
     void saveKVToHash(String hash, Object key, Object value);

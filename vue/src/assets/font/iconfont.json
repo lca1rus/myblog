@@ -1,0 +1,30 @@
+{
+  "id": "3667365",
+  "name": "lll",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "13479151",
+      "name": "显示",
+      "font_class": "B",
+      "unicode": "e6ff",
+      "unicode_decimal": 59135
+    },
+    {
+      "icon_id": "13479174",
+      "name": "点赞",
+      "font_class": "B1",
+      "unicode": "e705",
+      "unicode_decimal": 59141
+    },
+    {
+      "icon_id": "13479225",
+      "name": "聊天",
+      "font_class": "B2",
+      "unicode": "e709",
+      "unicode_decimal": 59145
+    }
+  ]
+}

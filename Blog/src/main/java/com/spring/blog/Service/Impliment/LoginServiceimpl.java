@@ -18,10 +18,8 @@ public class LoginServiceImpl implements  UserDetailsService, LoginService {
     @Autowired
    private usersmapper usersmapper;
 //
-
-
     public Users findUserByUsernameAndPassword(String username, String password) {
-        Users user = usersmapper.selectByusername(username);
+        Users user = usersmapper.selectByUsername(username);
         if (user == null) {
             System.out.println("不存在");
             throw new UsernameNotFoundException("用户不存在");
@@ -33,7 +31,7 @@ public class LoginServiceImpl implements  UserDetailsService, LoginService {
     //UserDetailsService通过此方法在数据库中查询用户
 
    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Users user = usersmapper.selectByusername(username);
+        Users user = usersmapper.selectByUsername(username);
         if (user == null) {
 
             System.out.println("用户不存在");

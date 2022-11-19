@@ -1,83 +1,80 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.spring.blog.dao.Blogmaoper">
-
     <resultMap id="blog" type="com.spring.blog.model.entity.Blogmodel.Blog">
         <id property="id" column="id"/>
         <result property="title" column="title"/>
         <result property="content" column="content"/>
         <result property="firstPicture" column="firstPicture"/>
-        <result property="description" column="description"/>
-        <result property="flag" column="flag"/>
-        <result property="published" column="published"/>
         <result property="recommend" column="recommend"/>
-        <result property="appreciation" column="appreciation"/>
-        <result property="shareStatement" column="shareStatement"/>
-        <result property="commentEnabled" column="commentEnabled"/>
+        <result property="comment" column="comment"/>
         <result property="createTime" column="createTime"/>
         <result property="updateTime" column="updateTime"/>
         <result property="views" column="views"/>
         <result property="words" column="words"/>
-        <result property="readTime" column="readTime"/>
-        <result property="writer_id" column="writerid"/>
-        <result property="isEdit" column="isEdit"></result>
+        <result property="publish" column="publish"/>
+        <result property="writer_id" column="writerid"></result>
 
 <!--        association 的property的生成是从resultMap id 的model的中生成的-->
-        <association property="users" javaType="com.spring.blog.model.entity.Usermodel.Users">
-            <id property="id" column="user_id"/>
-            <result property="username" column="username"/>
-            <result property="email" column="email"/>
-            <result property="createTime" column="createTime"/>
-            <result property="updateTime" column="updateTime"/>
-            <result property="role" column="role"/>
-        </association>
-<!--        <association property="father" javaType="com.ksy.kuaishiyan.entity.Father"-->
-<!--                     resultMap="com.spring.blog.dao.usersmapper.">-->
-<!--           association 标签中resultMap属性指向FatherMapper.xml中的BaseResultMap,
- 这种情况下要求father表和son表没有相同名字的字段, 否则会失败. 调用selectByPrimaryKey传入id=2, 查询结果失败如下:
-     </association>-->
-
-
-        <association property="category" javaType="com.spring.blog.model.entity.Blogmodel.Category">
-            <id property="id" column="category_id"/>
-            <result property="name" column="category_name"/>
-        </association>
-
-
-        <collection property="tags" javaType="com.spring.blog.model.entity.Blogmodel.Tag">
-            <id property="id" column="tag_id"/>
-            <result property="name" column="tag_name"/>
-            <result property="color" column="color"/>
-        </collection>
-    </resultMap>
-
-    <resultMap id="AdminBlogInfo" type="com.spring.blog.model.vo.AdminBlogInfo">
-        <id property="id" column="id"/>
-        <result property="title" column="title"/>
-        <result property="content" column="content"/>
-        <result property="writer_id" column="writerid"/>
-        <result property="isEdit" column="isEdit"></result>
-
         <association property="userLoginMsg" javaType="com.spring.blog.model.vo.UserLoginMsg">
             <id property="id" column="user_id"/>
             <result property="username" column="username"/>
         </association>
     </resultMap>
 
+<!--只要有对应的行名称就会将数据放在哪里-->
+    <resultMap id="comments" type="com.spring.blog.model.entity.Blogmodel.Comment">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="content" column="content"/>
+        <result property="createTime" column="createTime"/>
+        <result property="blog_id" column="blog_id"/>
+        <result property="f_id" column="f_id"/>
+    </resultMap>
 
-<!--    <sql id="Base_Column_List">-->
-<!--       -->
-<!--    </sql>-->
+
+    <resultMap id="userLoginMsg" type="com.spring.blog.model.vo.UserLoginMsg">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+    </resultMap>
+
+
 <!--查找blog的数据满足-->
-    <select id="getBlogList" resultMap="AdminBlogInfo">
+
+  <select id="getIDByUsername" resultMap="userLoginMsg" >
+        SELECT id
+        FROM users
+        WHERE username=#{username}
+    </select>
+    <select id="getArticle" parameterType="java.lang.Integer" resultMap="blog">
+        SELECT b.id,b.title,b.content,b.views,b.comment,b.recommend,b.createTime,u.username
+        FROM blog AS b,users AS u
+        WHERE b.writerid=u.id and b.id=#{id};
+    </select>
+
+    <select id="getIndexBlogList" resultMap="blog">
+        SELECT b.id,b.title,b.content,b.views,b.comment,b.recommend,u.username
+        FROM blog AS b,users AS u
+        WHERE b.writerid=u.id
+        order by b.id
+    </select>
+
+    <select id="getAdminBlogList" resultMap="blog">
     SELECT b.id,b.title,b.content,u.username
     FROM blog AS b,users AS u
     WHERE b.writerid=u.id
     order by b.id
     </select>
+
+    <select id="GetBlogByName" resultMap="blog" parameterType="java.lang.String">
+        SELECT b.id,b.title,b.content,u.username
+        FROM blog AS b,users AS u
+        WHERE b.writerid=u.id
+        and u.username=#{name}
+    </select>
+
 <!--    通过查询到的blog的id进行删除-->
     <delete id="deleteBlog" parameterType="java.lang.Integer">
-
         delete from blog AS b
         where  b.id= #{id,jdbcType=INTEGER}
     </delete>
@@ -96,6 +93,13 @@
     insert into blog(title,content,createTime)
 value (#{title},#{content},#{createTime})
 </insert>
+    <!--添加博客-->
+    <insert id="WriteBlog">
+        insert into blog (title, firstPicture, content, publish, recommend, comment,
+                          createTime, updateTime,writerid)
+        values (#{title}, #{firstPicture}, #{content},#{publish}, #{recommend}, #{comment},
+             #{createTime}, #{updateTime}, #{writerid})
+    </insert>
 
 
 </mapper>

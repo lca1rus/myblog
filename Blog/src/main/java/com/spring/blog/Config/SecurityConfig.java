@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
@@ -34,13 +35,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     说白了就是所有 UserDetails 相关的它都管，包含 PasswordEncoder 密码等。
     如果你不清楚可以通过 Spring Security 中的 UserDetail 进行了解。
     本文对 AuthenticationManager 不做具体分析讲解，后面会有专门的文章来讲这个东西 。
-
+Article
      */
+    @Override
+    public void configure(WebSecurity web) throws Exception {
+        web.ignoring().antMatchers("/index/**","/Article/**");
+    }//不走过滤器链直接放行
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(loginService)
-                .passwordEncoder(myPasswordEncoder);//配置安全的userDetailsService
+                .passwordEncoder(myPasswordEncoder)
+                ;//配置安全的userDetailsService
     }
 // /*
 //    void configure(HttpSecurity http) 这个是我们使用最多的，用来配置 HttpSecurity 。
@@ -62,9 +68,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 //任何经过JWT验证的请求都通过
                 .authorizeRequests()
 
-               .antMatchers("/ws").permitAll()
-                //使ws经过security的过滤检查，但仍然放行通过，如果有带token任然会被检查
-
                 .anyRequest().authenticated();//除了以上接口都需要认证
                 // 自定义JWT过滤器
                 //JwtLoginFilter放在token
@@ -74,10 +77,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             //自定义JWT过滤器,addFilterBefore（生成的自定义的过滤器的进行过滤的登录路径），该过滤器只在"/user/login"生效
         // 需要在重写的JwtLoginFilter中set，authenticationManager，过滤器过滤的位置UsernamePasswordAuthenticationFilter.class，之前）
 
-        http.addFilterBefore(new JwtLoginFilter("/login",
+        http
+                .addFilterBefore(new JwtLoginFilter("/login",//设置login为登录页面的，进行登录与验证
                            authenticationManager()), UsernamePasswordAuthenticationFilter.class)
 
             .addFilterBefore(new JwtFilter(),UsernamePasswordAuthenticationFilter.class)
+
             //通过过滤器检查出没有带token时跳转在此
                     .exceptionHandling().authenticationEntryPoint(myAuthenticationEntryPoint);
 

@@ -14,9 +14,5 @@ class BlogApplicationTests {
     @Autowired
     Blogmaoper blogMapper;
 
-    @Test
-    void test() {
-        List blogs = blogMapper.getBlogList();
-        System.out.println(blogs);
-    }
+
 }

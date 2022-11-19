@@ -32,7 +32,7 @@ public class WebsocketConfig implements WebSocketConfigurer {
                 //自定义的websocket服务,这里都可以定义多个
                .addHandler(httpAuthHandler,"ws")
                 //设置拦截器
-                .addInterceptors(myInterceptor)
+             //   .addInterceptors(myInterceptor)有了security的拦截器可以保证都是登录过的
                 //设置登录用户检查
                 //.setHandshakeHandler(myPrincipalHandshakeHandler)
                 //关闭跨域校验

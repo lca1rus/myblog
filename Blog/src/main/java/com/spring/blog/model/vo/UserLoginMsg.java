@@ -12,6 +12,4 @@ import lombok.ToString;
 public class UserLoginMsg {
     private Integer id;
     private String username;
-
-
 }

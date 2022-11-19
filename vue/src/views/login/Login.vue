@@ -3,10 +3,9 @@
     <div class="container">
       <div class="login-wrapper">
         <meta charset="GBK">
-        <div v-show="this.$route.meta.show">
+
           <div class="header">Login</div>
 
-          <!--µÇÂ¼±íµ¥-->
           <el-form ref="loginForm" :model="loginForm" :rules="loginFormRules" class="login_form">
             <el-form-item prop="username" class="input-item">
               username:
@@ -28,7 +27,7 @@
             Don't have account?
             <router-link to="/register">Sing up</router-link>
           </div>
-        </div>
+
         <router-view />
       </div>
     </div>
@@ -64,18 +63,17 @@ export default {
               .then(res => {
                 if (res.code === 200) {
                   this.msgSuccess(res.msg);
-                  //alert(res.msg)
-                  window.sessionStorage.setItem('token', res.data.token)
+                  window.localStorage.setItem('token', res.data.token)
+                  window.localStorage.setItem('username',this.loginForm.username)
+                  //登录成功将token放在session中
                   this.$router.push({path: '/'})
-
                 }
                 else {
-                  //alert(res.msg)
                   this.msgError(res.msg)
                 }
               })
               .catch(() => {
-                this.msgError("ÇëÇóÊ§°Ü")
+                this.msgError("密码错误")
               })
         }
       })

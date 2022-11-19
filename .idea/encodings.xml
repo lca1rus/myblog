@@ -11,7 +11,7 @@
     <file url="file://$PROJECT_DIR$/vue/src/plugins/blog.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vue/src/plugins/login.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vue/src/views/Admin/AdminManger.vue" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/vue/src/views/blog/Blog.vue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vue/src/views/blog/IndexBlog.vue" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vue/src/views/blog/WriteBlog.vue" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vue/src/views/home/Home.vue" charset="UTF-8" />
   </component>

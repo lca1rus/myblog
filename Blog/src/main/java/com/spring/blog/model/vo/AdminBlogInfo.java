@@ -14,7 +14,6 @@ public class AdminBlogInfo {
     private Long id;
     private String title;
     private String content;
-    private String writerid;
     private boolean isEdit;
     private UserLoginMsg userLoginMsg;
 }

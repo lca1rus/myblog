@@ -1,26 +1,28 @@
 import axios from "axios";
-import NProgress from 'nprogress'
-//import 'nprogress/nprogress.css'
 const request
     = axios.create({
-    baseURL: 'api/',
+    baseURL: 'http://localhost:8090/',
     timeout: 10000,
 })
 
-
+//拦截后端的接口请求
 // 请求拦截器
 request.interceptors.request.use(
-
+//在session中拿到token
+    //如果存在，拿到后放入请求头中
     config => {
         //NProgress.start()
-        const token = window.sessionStorage.getItem('token')
 
-        if (token) {
-            console.log(token)
-            config.headers.Authorization = token
-
+        const token = window.localStorage.getItem('token')
+        const username = window.localStorage.getItem('username')
+            if (token) {
+                config.headers.Authorization = token
+            }
+        if (username) {
+            config.headers.username = username
         }
-        return config
+            return config
+
     }
 )
 

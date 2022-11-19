@@ -6,8 +6,15 @@
     <el-aside width="200px">
       <el-menu>
         <el-menu-item index="2">
-        <router-link to="/BlogList" slot="title" @click="getbloglist"><span>导航一</span></router-link>
+        <router-link to="/BlogList" slot="title" tag="a"><span>博客管理</span></router-link>
       </el-menu-item>
+      <el-menu-item index="3">
+        <router-link to="/ViewerList" slot="title" tag="a" ><span>用户管理</span></router-link>
+      </el-menu-item>
+        <el-menu-item index="3">
+          <router-link to="/Home" slot="title" tag="a" ><span>返回主页</span></router-link>
+        </el-menu-item>
+
       </el-menu>
     </el-aside>
     <el-main>
@@ -27,17 +34,6 @@ export default {
 
 
   },
-   //
-   // methods: {
-   //
-   //         getbloglist() {
-   //           GetBlogs()
-   //               .then(res => {
-   //             this.bloglists = res.data.blogs.list
-   //             console.log(JSON.stringify(this.bloglists))
-   //           })
-   //         },
-   // },
 }
 </script>
 
@@ -62,5 +58,9 @@ export default {
     color: #333;
     text-align: center;
     line-height: 160px;
+  }
+  a{
+    text-decoration: none;
+    color:black;
   }
 </style>

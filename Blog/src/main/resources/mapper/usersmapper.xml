@@ -8,24 +8,46 @@
         <id property="id" column="id"/>
         <result column="username" property="username" />
         <result column="password"  property="password" />
-        <result property="email" column="email"/>
-        <result property="createTime" column="user_create_time"/>
-        <result property="updateTime" column="user_update_time"/>
-        <result property="role" column="role"/>
+        <result column="email" property="email" />
+        <result column="createTime" property="createTime" />
+        <result column="updateTime" property="updateTime"/>
+        <result column="role" property="role"/>
     </resultMap>
 
-    <sql id="Base_Column_List">
-
-
+    <sql id="Login_Base_Column_List">
         username,password
     </sql>
+    <sql id="UserAdminInfo_Base_Column_List">
+        id,username,email,createTime,updateTime,role
+    </sql>
 
-    <select id="selectByusername"  parameterType="java.lang.String" resultMap="BaseResultMap">
+    <select id="selectByUsername"  parameterType="java.lang.String" resultMap="BaseResultMap">
 
         select
-        <include refid="Base_Column_List" />
+        <include refid="Login_Base_Column_List" />
         from users
         where username = #{username}
 
     </select>
+    <select id="GetUsersInfo" resultMap="BaseResultMap">
+
+        select
+        <include refid="UserAdminInfo_Base_Column_List" />
+        from users
+
+    </select>
+<delete id="DeleteById" parameterType="java.lang.Integer">
+    delete from users AS u
+    where  u.id= #{id,jdbcType=INTEGER}
+</delete>
+
+    <select id="FindUserByName" resultMap="BaseResultMap" parameterType="java.lang.String">
+
+        select
+        <include refid="UserAdminInfo_Base_Column_List" />
+        from users
+        where username = #{username};
+
+    </select>
+
 </mapper>

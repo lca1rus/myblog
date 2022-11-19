@@ -1,5 +1,14 @@
 {
   "dependencies": {
-    "mavon-editor": "^2.10.4"
+    "clipboard": "^2.0.11",
+    "highlight.js": "^11.6.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-abbr": "^1.0.4",
+    "mavon-editor": "^2.10.4",
+    "tocbot": "^4.18.2"
+  },
+  "devDependencies": {
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2"
   }
 }

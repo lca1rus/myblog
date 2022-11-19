@@ -1,29 +1,28 @@
 <template>
-	<div>
+	<div class="ff">
 		<div >
                <Header/>
 		</div>
 		
 		<div class="main">
 			<div>
-			    <!-- 左侧空间 -->
-                <div class=""></div>
-		        <!-- 中间空间 -->
-		        <div>
-					
-				</div>
-		        <!-- 右侧空间 -->
-		        <div></div>
+				<Blog/>
 			</div>
+		</div>
+		<!--APlayer-->
+		<div class="m-mobile-hide">
+			<MyAPlayer/>
 		</div>
 	</div>
 </template>
 
 <script>
 import Header from "../components/index/Header"
+import MyAPlayer from"../components/index/MyAplayer.vue"
+import Blog from "./blog/IndexBlog.vue"
 export default {
  name:'Index',
- components:{Header}
+ components:{Header,MyAPlayer,Blog}
 }
 </script>
 
@@ -32,4 +31,9 @@ export default {
 		margin-top: 40px;
 		flex: 1;
 	}
+	body{
+		background-color: rgb(242, 245, 248);
+	}
+
+	
 </style>
